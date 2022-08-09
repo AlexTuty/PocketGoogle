@@ -28,7 +28,6 @@ namespace PocketGoogle
                 dictionary[id] = text;
                 indexer.Add(id, text);
             }
-            var x = indexer.GetPositions(0, "Чтоб");
             Application.Run(new PocketGoogleWindow(indexer, dictionary));
         }
     }
